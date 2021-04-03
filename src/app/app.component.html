@@ -1,0 +1,7 @@
+<div style="text-align:center">
+<h1>Welcome to {{title}}!</h1>
+<button (click)="sendMessageToServer()">Send Message To Server</button>
+<input type="text" name = "txt" [(ngModel)] = "message" (change) = "sendMessageToServer2($event)">
+<button (click)="sendMessageToServer3()">Send Message To Server3</button>
+<div [innerHTML] = "message"></div>
+</div>
